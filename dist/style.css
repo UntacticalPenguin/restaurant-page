@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+
+body{
+  background-color: #2b2e4a;
+  margin: 0;
+}
+
+.title{
+  background-color: #e84545;
+  position: relative;
+  height: 5em;
+  margin: 0;
+  padding: 0;
+}
+
+.tab-div{
+  display: grid;
+  position: relative;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 100%;
+  height: 5em;
+  background-color: #903749;
+}
+
+
+.tab{
+  position: relative;
+  color: white;
+  background-image: linear-gradient(#e84545 , #903749);
+  text-align: center;
+  cursor: pointer;
+  margin: 0;
+  height: 100%;
+  font-size: 3.5em;
+  font-family: 'Dosis', sans-serif;
+}
+
+.tab:hover{
+  background-image: linear-gradient(#e84545, #2b2e4a);
+}
+
+.tab-sel{
+  position: relative;
+  bottom: 2px;
+  color: white;
+  border-style: solid;
+  border-color: white;
+  border-width: 2px 2px 0 2px;
+  background-image: linear-gradient(#2b2e4a,#2b2e4a)
+}
+
+.tab-sel:hover{
+  background-image: linear-gradient(#2b2e4a,#2b2e4a)
+}
