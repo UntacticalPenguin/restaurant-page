@@ -34,6 +34,8 @@ body{
   height: 100%;
   font-size: 3.5em;
   font-family: 'Dosis', sans-serif;
+  border-style: solid;
+  border-width: 0 0 2px 0;
 }
 
 .tab:hover{
@@ -52,4 +54,10 @@ body{
 
 .tab-sel:hover{
   background-image: linear-gradient(#2b2e4a,#2b2e4a)
+}
+
+.display-div{
+  position: relative;
+  height: 500px;
+  width: 100%;
 }
