@@ -4,6 +4,7 @@
 body{
   background-color: #2b2e4a;
   margin: 0;
+  height: 10em;
 }
 
 .title{
@@ -57,7 +58,8 @@ body{
 }
 
 .display-div{
+  background-color: green;
   position: relative;
-  height: 500px;
+  height: 300px;
   width: 100%;
 }
