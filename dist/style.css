@@ -57,9 +57,92 @@ body{
   background-image: linear-gradient(#2b2e4a,#2b2e4a)
 }
 
+/*   FAQ CSS */
+
 .display-div{
   background-color: green;
   position: relative;
   height: 300px;
   width: 100%;
+}
+
+.title-div{
+  display: grid;
+  position: relative;
+  height: 100px;
+  background-color: purple;
+  grid-template-rows: 50% 50%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: green;
+}
+
+.sub-div{
+  position: relative;
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+
+.sub-answer{
+  height: 100px;
+  background-color: red;
+}
+
+.answer{
+  color: white;
+  font-size: 1em;
+}
+
+.gg-chevron-down {
+    color: white;
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 22px;
+    height: 22px;
+    border: 2px solid transparent;
+    border-radius: 100px;
+    --ggs:3;
+}
+.gg-chevron-down::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    transform: rotate(45deg);
+    left: 4em;
+    top: 0.9em;
+    cursor: pointer;
+}
+
+.gg-chevron-left {
+    color: white;
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    transform: scale(var(--ggs,1));
+    width: 22px;
+    height: 22px;
+    border: 2px solid transparent;
+    border-radius: 100px;
+    --ggs: 3;
+}
+.gg-chevron-left::after {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    transform: rotate(45deg);
+    left: 4.3em;
+    top: 1em;
+    cursor: pointer;
 }
