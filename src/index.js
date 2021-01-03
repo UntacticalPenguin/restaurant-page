@@ -54,7 +54,15 @@ function run_corr_display(x){
       content_contact(display_div);
       break;
     case 'faq':
-      content_faq(display_div);
+      let faq_div = document.createElement('div');
+      content_faq(faq_div, "Is there?", "Nope.");
+      content_faq(faq_div, 'How about?', 'still no'); 
+      content_faq(faq_div, 'How about?', 'still nooooooo ooooooooo ooooooooooooooooo oooooooooooooooooooooooooo oooooooooooooooo00000 000 0000000000 0000000 00000000 000000000 00000000 00000 00000000000o 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 oo oooooooooooooooooooooooooo oooooooooooooooo00000 000 0000000000 0000000 00000000 000000000 00000000 00000 00000000000o 0000 0000 0000 0000 0000 0000 0000 0000 00 oo oooooooooooooooooooooooooo oooooooooooooooo00000 000 0000000000 0000000 00000000 000000000 00000000 00000 00000000000o 0000 0000 0000 0000 0000 0000 0000 0000 00 oo oooooooooooooooooooooooooo oooooooooooooooo00000 000 0000000000 0000000 00000000 000000000 00000000 00000 00000000000o 0000 0000 0000 0000 0000 0000 0000 0000 00');
+      content_faq(faq_div, 'How about?', 'still no'); 
+      content_faq(faq_div, 'How about?', 'still no');
+      content_faq(faq_div, 'How about?', 'still no');
+      display_div.appendChild(faq_div);
+      faq_div.style.margin = '4em 4em 4em 4em';
       break;
     default:
       console.log('error');
