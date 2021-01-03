@@ -57,7 +57,7 @@ body{
   background-image: linear-gradient(#2b2e4a,#2b2e4a)
 }
 
-/*   FAQ CSS */
+
 
 .display-div{
   background-color: green;
@@ -66,31 +66,54 @@ body{
   width: 100%;
 }
 
+/*   FAQ CSS */
+
+
 .title-div{
   display: grid;
   position: relative;
-  height: 100px;
-  background-color: purple;
+  min-height: 100px;
+  width: 80%;
+  background-color: #2b2e4a;
   grid-template-rows: 50% 50%;
   border-style: solid;
   border-width: 2px;
-  border-color: green;
+  border-color: white;
+  margin: 2em auto 2em auto;
+  display: block;
+  overflow: auto;
+}
+.title-faq{
+  color: white;
+  font-size: 3em;
+  margin: 0.3em 0 0 0.5em;
+  font-family: 'Dosis', sans-serif;
 }
 
 .sub-div{
   position: relative;
   display: grid;
   grid-template-columns: 80% 20%;
+  border-style: solid;
+  border-color: #2b2e4a;
+  border-width: 2px 2px 2px 2px;
+  height: 100px;
 }
 
 .sub-answer{
-  height: 100px;
-  background-color: red;
+  display: block;
+  overflow: auto;
+  min-height: 100px;
+  background-color: #e84545;
+  width: 100%;
 }
 
 .answer{
   color: white;
-  font-size: 1em;
+  font-size: 1.5em;
+  margin: 1em 0 0 1em;
+  font-family: 'Dosis', sans-serif;
+  word-wrap: break-word;
 }
 
 .gg-chevron-down {
