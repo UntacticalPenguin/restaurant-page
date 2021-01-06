@@ -48,7 +48,11 @@ function run_corr_display(x){
       content_about(display_div);
       break;
     case 'menu':
-      content_menu(display_div);
+      content_menu(display_div, ['/src/modules/images/family-image.png', 
+      '/src/modules/images/dog-image.png', 
+      '/src/modules/images/food-image.png'], 
+      ['Family', 'Pets', 'Food'],
+      ['family', 'dog0000000 00 00000 000000 00000 00000 000000 0000000 000000000 0000000 00000 0000 00000000 000 000000 000', 'food']);
       break;
     case 'contact':
       content_contact(display_div);
