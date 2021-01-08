@@ -6,7 +6,12 @@ import content_faq from './modules/faq.js';
 let body = document.querySelector("body");
 let tab_div = document.createElement('div');
 let display_div = document.createElement('div');
-let test_1;
+
+let title = document.querySelector(".title");
+let title_text = document.createElement('p');
+title_text.textContent = "SpiceItUP";
+title.appendChild(title_text);
+title_text.classList.add('title-text');
 
 body.appendChild(tab_div);
 body.appendChild(display_div);
@@ -50,21 +55,28 @@ function run_corr_display(x){
     case 'menu':
       content_menu(display_div, ['/src/modules/images/family-image.png', 
       '/src/modules/images/dog-image.png', 
-      '/src/modules/images/food-image.png'], 
-      ['Family', 'Pets', 'Food'],
-      ['family', 'dog0000000 00 00000 000000 00000 00000 000000 0000000 000000000 0000000 00000 0000 00000000 000 000000 000', 'food']);
+      '/src/modules/images/food-image.png',
+      '/src/modules/images/spices-image.png',
+      '/src/modules/images/nerd-image.png',
+      '/src/modules/images/show-image.png'
+    ], 
+      ['Family', 'Pets', 'Food', 'Spices', 'Yourself', 'Your TV-Shows'],
+      ['Spice up your family life, so that you can all enjoy a better future!', 'If your pet is too lazy, fat or a hamster, you can spice it up here!', 'Of course we offer the traditional way of spicing things up, and by that we mean spicing up your food.', 
+      'Yes, we can make your exotic spices even more exotic and spicier!',"If you don't want to get laughed at again, we can even spice you up so you will be the coolest kid in town!",
+      'Or we can spice up the boring, unfunny and repetitive TV-shows no one actually cars about anymore.'
+    ]);
       break;
     case 'contact':
       content_contact(display_div);
       break;
     case 'faq':
       let faq_div = document.createElement('div');
-      content_faq(faq_div, "Is there?", "Nope.");
-      content_faq(faq_div, 'How about?', 'still no'); 
-      content_faq(faq_div, 'How about?', 'still nooooooo ooooooooo ooooooooooooooooo oooooooooooooooooooooooooo oooooooooooooooo00000 000 0000000000 0000000 00000000 000000000 00000000 00000 00000000000o 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 0000 oo oooooooooooooooooooooooooo oooooooooooooooo00000 000 0000000000 0000000 00000000 000000000 00000000 00000 00000000000o 0000 0000 0000 0000 0000 0000 0000 0000 00 oo oooooooooooooooooooooooooo oooooooooooooooo00000 000 0000000000 0000000 00000000 000000000 00000000 00000 00000000000o 0000 0000 0000 0000 0000 0000 0000 0000 00 oo oooooooooooooooooooooooooo oooooooooooooooo00000 000 0000000000 0000000 00000000 000000000 00000000 00000 00000000000o 0000 0000 0000 0000 0000 0000 0000 0000 00');
-      content_faq(faq_div, 'How about?', 'still no'); 
-      content_faq(faq_div, 'How about?', 'still no');
-      content_faq(faq_div, 'How about?', 'still no');
+      content_faq(faq_div, "How does the service work?", "It doesn't really work.");
+      content_faq(faq_div, 'Can I order to put spice into someone elses eyes?', 'Yes, for an extra fee of 20$.'); 
+      content_faq(faq_div, 'Is this site legit?', 
+      "When we cread this Site, we didn't really think about what to create. But still, the service is working and if you choose to contact us, we will actually fulfill what is promised.");
+      content_faq(faq_div, 'Is this service available internationally?', 'Yes, once you contact us and order a spice-hit, we will connect you with our corresponding regional manager.');
+      content_faq(faq_div, 'Do you accpet credit cards?', 'Cash only *wink wink*');
       display_div.appendChild(faq_div);
       faq_div.style.margin = '4em 4em 4em 4em';
       break;
