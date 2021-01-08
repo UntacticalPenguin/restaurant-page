@@ -53,12 +53,12 @@ function run_corr_display(x){
       content_about(display_div);
       break;
     case 'menu':
-      content_menu(display_div, ['/src/modules/images/family-image.png', 
-      '/src/modules/images/dog-image.png', 
-      '/src/modules/images/food-image.png',
-      '/src/modules/images/spices-image.png',
-      '/src/modules/images/nerd-image.png',
-      '/src/modules/images/show-image.png'
+      content_menu(display_div, ['https://raw.githubusercontent.com/UntacticalPenguin/restaurant-page/main/src/modules/images/family-image.png', 
+      'https://raw.githubusercontent.com/UntacticalPenguin/restaurant-page/main/src/modules/images/dog-image.png', 
+      'https://raw.githubusercontent.com/UntacticalPenguin/restaurant-page/main/src/modules/images/food-image.png',
+      'https://raw.githubusercontent.com/UntacticalPenguin/restaurant-page/main/src/modules/images/spices-image.png',
+      'https://raw.githubusercontent.com/UntacticalPenguin/restaurant-page/main/src/modules/images/nerd-image.png',
+      'https://raw.githubusercontent.com/UntacticalPenguin/restaurant-page/main/src/modules/images/show-image.png'
     ], 
       ['Family', 'Pets', 'Food', 'Spices', 'Yourself', 'Your TV-Shows'],
       ['Spice up your family life, so that you can all enjoy a better future!', 'If your pet is too lazy, fat or a hamster, you can spice it up here!', 'Of course we offer the traditional way of spicing things up, and by that we mean spicing up your food.', 
